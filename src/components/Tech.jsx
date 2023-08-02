@@ -21,7 +21,9 @@ const slugs = [
   allIcons.siMongodb,
   allIcons.siMongoose,
   allIcons.siMysql,
-  allIcons.siGraphql
+  allIcons.siGraphql,
+  allIcons.siGit,
+  allIcons.siRedux
 ];
 
 const icons = slugs.map((icon) => {
