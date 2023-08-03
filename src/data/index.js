@@ -1,36 +1,13 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   react,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   node,
   api,
   db,
   aws,
   velvetech,
   avtomatika,
-  delovye
+  delovye,
+  comingsoon
 } from '../assets';
 
 const navLinks = [
@@ -43,8 +20,24 @@ const navLinks = [
     title: 'Experience'
   },
   {
+    id: 'portfolio',
+    title: 'Portfolio'
+  },
+  {
+    id: 'education',
+    title: 'Education'
+  },
+  {
+    id: 'about',
+    title: 'About Me'
+  },
+  {
     id: 'contact',
     title: 'Contact'
+  },
+  {
+    id: 'cv',
+    title: 'My CV'
   }
 ];
 
@@ -126,39 +119,13 @@ const experiences = [
     ]
   }
 ];
-
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg'
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg'
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
-  }
-];
+const portfolioIntro = `This section provides insights into my expertise and passion for creating innovative and impactful web solutions. Each project’s card contains links to code repositories and live demos. These projects showcase my ability to solve complex problems, work with diverse technologies, and effectively manage projects.`;
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Project 1',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Sed tristique libero sed nisl sagittis, vel cursus ex porta. Maecenas id nisi vel mauris suscipit tempus ac ut tortor. Quisque eleifend luctus urna, vitae.',
     tags: [
       {
         name: 'react',
@@ -173,13 +140,14 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: comingsoon,
+    source_code_link: 'https://github.com/pfellow',
+    link: 'https://pfellow.me'
   },
   {
-    name: 'Job IT',
+    name: 'Project 2',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Nunc quis ex venenatis, vestibulum dui vitae, placerat velit. Suspendisse ut congue tortor. Mauris sit amet augue fermentum, consectetur velit et, euismod odio.',
     tags: [
       {
         name: 'react',
@@ -194,13 +162,14 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
+    image: comingsoon,
+    source_code_link: 'https://github.com/pfellow',
+    link: 'https://pfellow.me'
   },
   {
-    name: 'Trip Guide',
+    name: 'Project 3',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed varius lacus non ante luctus, sit amet posuere orci tristique sed.',
     tags: [
       {
         name: 'nextjs',
@@ -215,8 +184,9 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: comingsoon,
+    source_code_link: 'https://github.com/pfellow',
+    link: 'https://pfellow.me'
   }
 ];
 
@@ -225,8 +195,7 @@ export {
   overview,
   navLinks,
   services,
-  technologies,
   experiences,
-  testimonials,
-  projects
+  projects,
+  portfolioIntro
 };

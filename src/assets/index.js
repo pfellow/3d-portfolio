@@ -38,6 +38,7 @@ import delovye from './company/delovye.png';
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import comingsoon from './comingsoon.png';
 
 export {
   logo,
@@ -75,5 +76,6 @@ export {
   aws,
   velvetech,
   avtomatika,
-  delovye
+  delovye,
+  comingsoon
 };

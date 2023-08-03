@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas, ImacCanvas } from './canvas';
 import { heroText } from '../data';
 
 const Hero = () => {
@@ -14,18 +14,18 @@ const Hero = () => {
           <div className='flex flex-row gap-5 mt-10'>
             <div className='flex flex-col justify-start items-center mt-5'>
               <div className='w-5 h-5 rounded-full bg-[#1282a2]' />
-              <div className='w-1 sm:h-40 h-20 blue-gradient' />
+              <div className='w-1 h-full blue-gradient' />
             </div>
 
             <div>
               <h1
-                className={`${styles.heroHeadText} text-[#1282a2] md:max-w-[80%]`}
+                className={`${styles.heroHeadText} text-white md:max-w-[80%]`}
               >
                 Kia ora, I'm&nbsp;
-                <span className='text-white'>Sergey Shilovskiy</span>
+                <span className='text-[#1282a2]'>Sergey Shilovskiy</span>
               </h1>
               <p
-                className={`${styles.heroSubText} mt-5 text-white-100 md:max-w-[70%]`}
+                className={`${styles.heroSubText} mt-5 text-white-100 md:max-w-[90%]`}
               >
                 {heroText}
               </p>
@@ -33,7 +33,8 @@ const Hero = () => {
           </div>
         </div>
         <div className='md:h-[47vw] max-h-[600px] h-[300px] w-full'>
-          <ComputersCanvas />
+          {/* <ComputersCanvas /> */}
+          <ImacCanvas />
         </div>
         <div className='xs:bottom-10 bottom-32 w-full flex justify-center items-center pb-2'>
           <a href='#intro' className='block'>

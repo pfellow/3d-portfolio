@@ -1,6 +1,7 @@
-import EarthCanvas from "./Earth";
-import BallCanvas from "./Ball";
-import ComputersCanvas from "./Computers";
-import StarsCanvas from "./Stars";
+import MacbookCanvas from './Macbook';
+import IconCloud from './IconCloud';
+import ComputersCanvas from './Computers';
+import ImacCanvas from './Imac';
+import StarsCanvas from './Stars';
 
-export { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas };
+export { MacbookCanvas, IconCloud, ComputersCanvas, StarsCanvas, ImacCanvas };
