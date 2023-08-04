@@ -18,10 +18,44 @@ const Contact = () => {
     phone: ''
   });
 
-  const formChangeHandler = (event) => {};
+  const formChangeHandler = (event) => {
+    const { name, value } = event.target;
+    setForm({ ...form, [name]: value });
+  };
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        'service_td4vwms',
+        'template_cdfdswc',
+        {
+          from_name: `${form.name} - ${form.organization}`,
+          to_name: 'Sergey Shilovskiy',
+          from_email: form.email,
+          to_email: 'pfellow@proton.me',
+          message: `${form.message} Contact phone: ${form.phone}`
+        },
+        'X4QinzKCOooCWBQEV'
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you! I will get back too you soon.');
+        setForm({
+          name: '',
+          organization: '',
+          email: '',
+          message: '',
+          phone: ''
+        });
+      }),
+      (error) => {
+        setLoading(false);
+        alert('Something went wrong... Please try again later.');
+        console.log(error);
+      };
   };
 
   return (
@@ -45,7 +79,7 @@ const Contact = () => {
               value={form.name}
               onChange={formChangeHandler}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none forn-meduim'
+              className='bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-meduim'
             />
           </label>
           <label className='flex flex-col'>
@@ -58,7 +92,7 @@ const Contact = () => {
               value={form.organization}
               onChange={formChangeHandler}
               placeholder="What's your organization?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none forn-meduim'
+              className='bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-meduim'
             />
           </label>
           <label className='flex flex-col'>
@@ -69,7 +103,7 @@ const Contact = () => {
               value={form.email}
               onChange={formChangeHandler}
               placeholder="What's your email?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none forn-meduim'
+              className='bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-meduim'
             />
           </label>
           <label className='flex flex-col'>
@@ -82,7 +116,7 @@ const Contact = () => {
               value={form.phone}
               onChange={formChangeHandler}
               placeholder="What's your phone number?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none forn-meduim'
+              className='bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-meduim'
             />
           </label>
           <label className='flex flex-col'>
@@ -93,7 +127,7 @@ const Contact = () => {
               value={form.message}
               onChange={formChangeHandler}
               placeholder='Type your message'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none forn-meduim resize-none'
+              className='bg-tertiary py-3 px-4 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-meduim resize-none'
             />
           </label>
           <button
@@ -106,7 +140,7 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 0.5)}
-        className='xl:flex-1 xl:h-auto sm:h-[550px] h-[450px] xl:max-w-[65%]'
+        className='xl:flex-1 xl:h-[600px] sm:h-[550px] h-[400px] xl:max-w-[65%]'
       >
         <MacbookCanvas />
       </motion.div>

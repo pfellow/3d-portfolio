@@ -34,6 +34,10 @@ import tesla from './company/tesla.png';
 import velvetech from './company/velvetech.png';
 import avtomatika from './company/avtomatika.png';
 import delovye from './company/delovye.png';
+import whitireia from './company/whitireia.png';
+import peter from './company/peter.png';
+import economics from './company/economics.png';
+import vstu from './company/vstu.png';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
@@ -77,5 +81,9 @@ export {
   velvetech,
   avtomatika,
   delovye,
+  whitireia,
+  peter,
+  economics,
+  vstu,
   comingsoon
 };

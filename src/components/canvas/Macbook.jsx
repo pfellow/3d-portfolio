@@ -8,9 +8,9 @@ const Macbook = () => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={3} />
+      <hemisphereLight intensity={2} />
       <spotLight angle={2} penumbra={1} intensity={12} position={[1, 1, 1]} />
-      <primitive object={macbook.scene} scale={2} />
+      <primitive object={macbook.scene} scale={2.6} position={[0, -0.35, 0]} />
     </mesh>
   );
 };

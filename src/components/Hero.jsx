@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas, ImacCanvas } from './canvas';
+import { ImacCanvas } from './canvas';
 import { heroText } from '../data';
 
 const Hero = () => {
@@ -33,7 +33,6 @@ const Hero = () => {
           </div>
         </div>
         <div className='md:h-[47vw] max-h-[600px] h-[300px] w-full'>
-          {/* <ComputersCanvas /> */}
           <ImacCanvas />
         </div>
         <div className='xs:bottom-10 bottom-32 w-full flex justify-center items-center pb-2'>

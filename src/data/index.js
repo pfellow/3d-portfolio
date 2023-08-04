@@ -7,6 +7,10 @@ import {
   velvetech,
   avtomatika,
   delovye,
+  whitireia,
+  peter,
+  economics,
+  vstu,
   comingsoon
 } from '../assets';
 
@@ -119,6 +123,37 @@ const experiences = [
     ]
   }
 ];
+const education = [
+  {
+    title: 'Master of IT',
+    company_name: 'Whitireia New Zealand (Te Pūkenga)',
+    icon: whitireia,
+    iconBg: '#FFF',
+    date: 'Feb 2023 - Nov 2023'
+  },
+  {
+    title: 'Intelligent Systems (Mashine Learning)  - Postgraduate Course',
+    company_name: 'Peter the Great St. Petersburg Polytechnic University',
+    icon: peter,
+    iconBg: '#383E56',
+    date: 'Mar 2023 - Jul 2023'
+  },
+  {
+    title:
+      'Project management and enterprise business processes - Advanced Training',
+    company_name: 'St. Petersburg State University of Economics',
+    icon: economics,
+    iconBg: '#E6DEDD',
+    date: '2016'
+  },
+  {
+    title: 'Economics and Construction Company Management - Economic Manager',
+    company_name: 'Vologda State Technical University',
+    icon: vstu,
+    iconBg: '#383E56',
+    date: '2008'
+  }
+];
 const portfolioIntro = `This section provides insights into my expertise and passion for creating innovative and impactful web solutions. Each project’s card contains links to code repositories and live demos. These projects showcase my ability to solve complex problems, work with diverse technologies, and effectively manage projects.`;
 
 const projects = [
@@ -190,12 +225,33 @@ const projects = [
   }
 ];
 
+const aboutMeIntro =
+  "I love spending my spare time swimming and hiking. I am also into playing computer, console and board games, reading and listening to science fiction books, watching si-fi tv shows and socializing with my friends. I'm keen on travelling and exploring new places across the globe.";
+
+const photos = [
+  {
+    name: 'Photo 1',
+    image: comingsoon
+  },
+  {
+    name: 'Photo 1',
+    image: comingsoon
+  },
+  {
+    name: 'Photo 1',
+    image: comingsoon
+  }
+];
+
 export {
   heroText,
   overview,
   navLinks,
   services,
   experiences,
+  education,
   projects,
-  portfolioIntro
+  portfolioIntro,
+  aboutMeIntro,
+  photos
 };
