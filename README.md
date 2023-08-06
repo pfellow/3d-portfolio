@@ -22,7 +22,7 @@ fontawesome
 
 ### Getting Started
 1. To run the Portfolio Website locally on your machine, follow these steps:
-2. Clone this repository: *git clone https://github.com/your-username/portfolio-website.git*
+2. Clone this repository: *git clone [https://github.com/your-username/portfolio-website.git](https://github.com/pfellow/3d-portfolio.git)*
 3. Install dependencies: *npm install*
 4. Start the development server: *npm run dev*
 5. Open your web browser and go to *http://localhost:5173* to view the website.
