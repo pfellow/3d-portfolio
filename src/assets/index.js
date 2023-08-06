@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logowhite.svg';
 import menu from './menu.svg';
 import close from './close.svg';
 
