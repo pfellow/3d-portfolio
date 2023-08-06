@@ -32,11 +32,13 @@ const Contact = () => {
         'service_td4vwms',
         'template_cdfdswc',
         {
-          from_name: `${form.name} - ${form.organization}`,
+          from_name: form.name,
+          organization: form.organization,
+          phone_number: form.phone,
           to_name: 'Sergey Shilovskiy',
-          from_email: form.email,
+          reply_to: form.email,
           to_email: 'pfellow@proton.me',
-          message: `${form.message} Contact phone: ${form.phone}`
+          message: form.message
         },
         'X4QinzKCOooCWBQEV'
       )
