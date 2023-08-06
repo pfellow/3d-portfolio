@@ -38,10 +38,6 @@ const navLinks = [
   {
     id: 'contact',
     title: 'Contact'
-  },
-  {
-    id: 'cv',
-    title: 'My CV'
   }
 ];
 
@@ -53,7 +49,7 @@ const overview = `
 
 const services = [
   {
-    title: 'Frontent Developer (React.js)',
+    title: 'Frontend Developer (React.js)',
     icon: react
   },
   {
@@ -65,7 +61,7 @@ const services = [
     icon: api
   },
   {
-    title: 'Database Developer (SQL, noSQL)',
+    title: 'Database Developer (SQL, NoSQL)',
     icon: db
   },
   {
@@ -75,19 +71,19 @@ const services = [
 ];
 const experiences = [
   {
-    title: 'Business Analyst',
-    company_name: 'Delovye Linii',
-    icon: delovye,
-    iconBg: '#383E56',
-    date: 'Apr 2016 - Dec 2020',
+    title: 'IT Project Coordinator, Software Tester, Developer',
+    company_name: 'Velvetech',
+    icon: velvetech,
+    iconBg: '#E6DEDD',
+    date: 'Jul 2021 - Present',
     points: [
-      'Organization of building "from scratch" information systems (1C platform) for operational, financial, and managerial accounting of transport and logistics companies (100+ users, 1bn+ turnover) with integration with other ISs.',
-      'Further development of the ISs, determining the priorities and stages of product development.',
-      'Construction, description, regulation, optimization, and implementation of business processes, reporting on the activities of transport and logistics companies.',
-      'Organization of business support (documentary and contractual support, reporting, interaction with suppliers, IT companies).',
-      'Implementation of electronic document management.',
-      'Participation in IT projects (both Waterfall and Agile) as a customer/stakeholder, requirements provider, project coordinator, business analyst, and product owner.',
-      'Participation in the development and testing processes of new and existing solutions.'
+      'Participation in various IT projects as a project coordinator, business analyst, and software tester (the role depends on the project) at all stages of the project life cycle.',
+      'Development of a website (using Wix.com) for a legal company.',
+      'Coordination and organizing of three teams of developers.',
+      'Interaction and meetings with clients and product owners, organizing effective communication between team members.',
+      'Definition of the scope of projects and assessment of their costs.',
+      'Controlling changes, risks, and open issues in projects.',
+      'Preparation of regular project reports.'
     ]
   },
   {
@@ -97,29 +93,25 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Dec 2020 - Jul 2021',
     points: [
-      'Technical project coordination of two complex projects (development team - more than 30 people)',
-      'Formalization of business processes and functional requirements.',
-      'Definition of the scope of projects and assessment of their cost.',
-      'Search and mobilization of resources for projects.',
-      'Preparation of a work schedule, organization of work on a project by a team of internal and external performers, and the use of modern practices and project management tools.',
-      'Organization of effective communications between stakeholders, analysts, and developers, related departments of the company.',
-      'Preparation and update of project documentation.',
-      'Preparation of reports and presentation materials.'
+      'Technical project coordination of two complex software development projects (with a development team of more than 30 people).',
+      'Formalization of business processes and functional requirements, including the evaluation of their costs.',
+      'Preparation and updating of project documentation.',
+      'Organization of effective communications between stakeholders, analysts, developers, and other departments.'
     ]
   },
   {
-    title: 'IT project coordinator, Business Analyst, Software Tester',
-    company_name: 'Velvetech',
-    icon: velvetech,
-    iconBg: '#E6DEDD',
-    date: 'Jul 2021 - Present',
+    title: 'Business Analyst',
+    company_name: 'Delovye Linii',
+    icon: delovye,
+    iconBg: '#383E56',
+    date: 'Apr 2016 - Dec 2020',
     points: [
-      'Participation if various IT projects as Project Coordinator, Business Analyst, and Software Tester (the role depends on the project) at all stages of the project life cycle.',
-      'Coordinating 3 teams of developers simultaneously.',
-      'Interaction and meetings with American clients and product owners, organizing effective communication between team members.',
-      'Definition of the scope of projects and assessment of their cost.',
-      'Preparation of regular project reports.',
-      'Controlling changes, risks, and open issues in projects.'
+      'Business analysis for developing corporate information systems for operational, financial, and managerial accounting of transport and logistics companies (100 or more users) with integration with other information systems.',
+      'Engineering and reengineering transport and logistics business processes.',
+      'Organization of business support (documentary and contractual support, reporting, interaction with suppliers, and IT companies).',
+      'Implementation of electronic document management.',
+      'Participation in IT projects (both Waterfall and Agile) as a business analyst, project coordinator, and product owner.',
+      'Participation in the development and testing processes of new and existing solutions.'
     ]
   }
 ];
@@ -132,7 +124,7 @@ const education = [
     date: 'Feb 2023 - Nov 2023'
   },
   {
-    title: 'Intelligent Systems (Mashine Learning)  - Postgraduate Course',
+    title: 'Intelligent Systems (Machine Learning)  - Postgraduate Course',
     company_name: 'Peter the Great St. Petersburg Polytechnic University',
     icon: peter,
     iconBg: '#383E56',
@@ -154,7 +146,7 @@ const education = [
     date: '2008'
   }
 ];
-const portfolioIntro = `This section provides insights into my expertise and passion for creating innovative and impactful web solutions. Each project’s card contains links to code repositories and live demos. These projects showcase my ability to solve complex problems, work with diverse technologies, and effectively manage projects.`;
+const portfolioIntro = `This section (currently under construction) will provide insights into my expertise and passion for creating innovative and impactful web solutions. Each project’s card contains links to code repositories and live demos. These projects showcase my ability to solve complex problems, work with diverse technologies, and effectively manage projects.`;
 
 const projects = [
   {
@@ -225,14 +217,7 @@ const projects = [
   }
 ];
 
-const aboutMeIntro =
-  "I love spending my spare time swimming and hiking. I am also into playing computer, console and board games, reading and listening to science fiction books, watching si-fi tv shows and socializing with my friends. I'm keen on travelling and exploring new places across the globe.";
-
 const photos = [
-  {
-    name: 'Photo 1',
-    image: comingsoon
-  },
   {
     name: 'Photo 1',
     image: comingsoon
@@ -252,6 +237,5 @@ export {
   education,
   projects,
   portfolioIntro,
-  aboutMeIntro,
   photos
 };

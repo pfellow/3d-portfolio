@@ -1,10 +1,7 @@
-import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
-import { aboutMeIntro, photos } from '../data';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 
@@ -19,23 +16,9 @@ import exploring from '../assets/exploring.png';
 import globe from '../assets/globe.png';
 import netflix from '../assets/netflix.png';
 import books from '../assets/books.png';
-
-const PhotoCard = ({ index, name, image }) => {
-  return (
-    <motion.div variants={fadeIn('down', 'spring', index * 0.5, 0.75)}>
-      <Tilt
-        options={{ max: 45, scale: 1, speed: 200 }}
-        className='bg-tertiary p-5 rounded-2xl 2xl:w-[550px] xl:w-[550px] lg:w-[440px] md:w-[310px] w-full'
-      >
-        <img
-          src={image}
-          alt={name}
-          className='w-full h-full object-cover rounded-2xl'
-        />
-      </Tilt>
-    </motion.div>
-  );
-};
+import programming from '../assets/programming.png';
+import sergey from '../assets/sergey.jpg';
+import newzealand from '../assets/newzealand.png';
 
 const About = () => {
   return (
@@ -44,41 +27,55 @@ const About = () => {
         <p className={styles.sectionSubText}>My Interests</p>
         <h2 className={styles.sectionHeadText}>About me</h2>
       </motion.div>
-      <div className='w-full flex'>
-        <motion.p
+      <div className='w-full lg:flex gap-4 justify-between items-center'>
+        <motion.div
           variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-fourth text-[17px] max-w-3xl leading-[30px]'
+          className='mt-4 text-fourth sm:text-[20px]  sm:leading-[30px] text-[18px] leading-[22px] lg:w-[60%] max-w-[600px] '
         >
-          {/* {aboutMeIntro} */}
-          <p className='mb-4 leading-10'>
+          <div className='mb-4 leading-10'>
             I love spending my spare time{' '}
-            <img src={swimming} className='inline w-10' /> and{' '}
-            <img src={hiking} className='inline  w-10' />.
-          </p>
-          <p className='mb-4 leading-10'>
+            <img src={swimming} className='inline h-8' alt='swimming' />,{' '}
+            <img src={hiking} className='inline  h-8' alt='hiking' />, and{' '}
+            <img src={programming} className='inline  h-8' alt='programming' />.
+          </div>
+          <div className='mb-4 leading-10'>
             I am also into playing{' '}
-            <img src={computer} className='inline  w-8' alt='computer' />,{' '}
+            <img src={computer} className='inline h-8' alt='computer' />,{' '}
             <img src={playstation} className='inline  w-8' alt='playstation' />{' '}
-            and <img src={board} className='inline  w-8' alt='board' /> games,
+            and <img src={board} className='inline h-8' alt='board' /> games,
             reading and listening to science fiction{' '}
-            <img src={books} className='inline  w-8' alt='books' />, watching{' '}
-            <img src={netflix} className='inline  w-8' alt='tv shows' /> and
+            <img src={books} className='inline h-8' alt='books' />, watching{' '}
+            <img src={netflix} className='inline h-8' alt='tv shows' /> and
             socializing with my{' '}
-            <img src={friends} className='inline  w-8' alt='friends' />.
-          </p>
-          <p className='leading-10'>
+            <img src={friends} className='inline h-8' alt='friends' />.
+          </div>
+          <div className='mb-4 leading-10'>
             I'm keen on{' '}
-            <img src={travelling} className='inline  w-8' alt='travelling' />{' '}
-            and <img src={exploring} className='inline  w-8' alt='exploring' />{' '}
-            new places across{' '}
-            <img src={globe} className='inline  w-8' alt='globe' />.
-          </p>
-        </motion.p>
-      </div>
-      <div className='mt-20 flex flex-wrap gap-4'>
-        {photos.map((project, index) => (
-          <PhotoCard key={`project.${index}`} index={index} {...project} />
-        ))}
+            <img src={travelling} className='inline h-8' alt='travelling' /> and{' '}
+            <img src={exploring} className='inline h-8' alt='exploring' /> new
+            places across <img src={globe} className='inline h-8' alt='globe' />
+            .
+          </div>
+          <div className='mb-4 leading-10'>
+            I'm based in Wellington{' '}
+            <img src={newzealand} className='inline h-8' alt='New Zealand' />{' '}
+            but open to relocation to other cities of Aotearoa.
+          </div>
+        </motion.div>
+        <div className='lg:w-[40%] max-w-[500px] lg:mt-0 mt-10'>
+          <motion.div variants={fadeIn('down', 'spring', 0.5, 0.75)}>
+            <Tilt
+              options={{ max: 45, scale: 1, speed: 200 }}
+              className='bg-tertiary p-1 rounded-md'
+            >
+              <img
+                src={sergey}
+                alt="Sergey's photo"
+                className='w-full h-full object-cover rounded-md'
+              />
+            </Tilt>
+          </motion.div>
+        </div>
       </div>
     </>
   );

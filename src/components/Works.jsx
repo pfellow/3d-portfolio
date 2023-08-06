@@ -24,7 +24,7 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl 2xl:w-[550px] xl:w-[550px] lg:w-[440px] md:w-[310px] w-full'
       >
         <div
-          className='relative w-full h-[230px] cursor-pointer'
+          className='relative w-full h-[230px] cursor-pointer opacity-80 hover:opacity-100'
           onClick={() => window.open(link, '_blank')}
         >
           <img
@@ -32,15 +32,15 @@ const ProjectCard = ({
             alt={name}
             className='w-full h-full object-cover rounded-2xl'
           />
-          <div className='absolute inset-0 flex justify-end m-2 card-img_hover'>
+          <div className='absolute  inset-0 flex justify-end m-2 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'
             >
               <img
                 src={github}
                 alt='github link'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-3/4 h-3/4 object-contain'
               />
             </div>
           </div>
@@ -71,9 +71,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Portfolio</p>
-        <h2 className={styles.sectionHeadText}>
-          Projects // Under Construction
-        </h2>
+        <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
       <div className='w-full flex'>
         <motion.p

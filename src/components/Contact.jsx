@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
-import { MacbookCanvas } from './canvas';
+import { IphoneCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
@@ -76,6 +76,7 @@ const Contact = () => {
             <input
               type='text'
               name='name'
+              required
               value={form.name}
               onChange={formChangeHandler}
               placeholder="What's your name?"
@@ -100,6 +101,7 @@ const Contact = () => {
             <input
               type='email'
               name='email'
+              required
               value={form.email}
               onChange={formChangeHandler}
               placeholder="What's your email?"
@@ -124,6 +126,7 @@ const Contact = () => {
             <textarea
               rows='5'
               name='message'
+              required
               value={form.message}
               onChange={formChangeHandler}
               placeholder='Type your message'
@@ -142,7 +145,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 0.5)}
         className='xl:flex-1 xl:h-[600px] sm:h-[550px] h-[400px] xl:max-w-[65%]'
       >
-        <MacbookCanvas />
+        <IphoneCanvas />
       </motion.div>
     </div>
   );
