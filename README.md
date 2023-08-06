@@ -11,14 +11,14 @@ This website serves as a showcase for web development projects.
 Check out the live demo of the Portfolio Website here: https://pfellow.me
 
 ### Technologies Used
-React.js
-Tailwind CSS
-Three.js
-framer-motion
-react-icon-cloud
-simple-icons
-fontawesome
-3d models from https://sketchfab.com/
+* React.js
+* Tailwind CSS
+* Three.js
+* framer-motion
+* react-icon-cloud
+* simple-icons
+* fontawesome
+* 3D models from https://sketchfab.com/
 
 ### Getting Started
 1. To run the Portfolio Website locally on your machine, follow these steps:
