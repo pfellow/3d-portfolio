@@ -41,11 +41,9 @@ const navLinks = [
   }
 ];
 
-const heroText = `I'm a Web Developer skilled in JavaScript, React.js, Node.js, and database and cloud (AWS) technologies, with hands-on experience in creating dynamic and responsive web applications.`;
+const heroText = `I'm a Web Developer skilled in JavaScript (React.js, Node.js, Next.js), cloud technologies (AWS), and SQL/NoSQL databases with hands-on experience in creating dynamic and responsive web applications.`;
 
-const overview = `
-      By combining my technical proficiency, passion for web development, diverse IT background, and versatile interests, I aim to make a positive impact by creating innovative and user-focused web solutions while continuously growing as a developer and contributing to the success of the organization I work at.
-  `;
+const overview = `Programming is more than a skill – it's a hobby and a source of continuous self-development for me. I enjoy staying up to date with the latest advancements in web development and finding solutions to complex challenges. Thanks to my IT and business background, I can bridge the gap between technical expertise and business needs.`;
 
 const services = [
   {
@@ -71,7 +69,7 @@ const services = [
 ];
 const experiences = [
   {
-    title: 'IT Project Coordinator, Software Tester, Developer',
+    title: 'Project Coordinator',
     company_name: 'Velvetech',
     icon: velvetech,
     iconBg: '#E6DEDD',
@@ -146,7 +144,7 @@ const education = [
     date: '2008'
   }
 ];
-const portfolioIntro = `This section (currently under construction) will provide insights into my expertise and passion for creating innovative and impactful web solutions. Each project’s card contains links to code repositories and live demos. These projects showcase my ability to solve complex problems, work with diverse technologies, and effectively manage projects.`;
+const portfolioIntro = `This section (currently under construction) provides insights into my expertise and passion for creating innovative web solutions. Each project’s card contains links to code repositories and live demos.`;
 
 const projects = [
   {

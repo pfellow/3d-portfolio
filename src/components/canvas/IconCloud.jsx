@@ -26,7 +26,9 @@ const slugs = [
   allIcons.siTestrail,
   allIcons.siJira,
   allIcons.siConfluence,
-  allIcons.siUnity
+  allIcons.siUnity,
+  allIcons.siRadixui,
+  allIcons.siNextdotjs
 ];
 
 const icons = slugs.map((icon) => {
