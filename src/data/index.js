@@ -11,7 +11,10 @@ import {
   peter,
   economics,
   vstu,
-  comingsoon
+  comingsoon,
+  portfolio,
+  game,
+  ogogl
 } from '../assets';
 
 const navLinks = [
@@ -41,7 +44,7 @@ const navLinks = [
   }
 ];
 
-const heroText = `I'm a Web Developer skilled in JavaScript (React.js, Node.js, Next.js), cloud technologies (AWS), and SQL/NoSQL databases with hands-on experience in creating dynamic and responsive web applications.`;
+const heroText = `I'm a Software Engineer skilled in JavaScript (React.js, Node.js, Next.js), cloud technologies (AWS), and SQL/NoSQL databases with hands-on experience in creating dynamic and responsive web applications.`;
 
 const overview = `Programming is more than a skill – it's a hobby and a source of continuous self-development for me. I enjoy staying up to date with the latest advancements in web development and finding solutions to complex challenges. Thanks to my IT and business background, I can bridge the gap between technical expertise and business needs.`;
 
@@ -144,74 +147,78 @@ const education = [
     date: '2008'
   }
 ];
-const portfolioIntro = `This section (currently under construction) provides insights into my expertise and passion for creating innovative web solutions. Each project’s card contains links to code repositories and live demos.`;
+const portfolioIntro = `This section provides insights into some of my web projects. Each project’s card contains links to code repositories and live demos.`;
 
 const projects = [
   {
-    name: 'Project 1',
+    name: 'Portfolio website',
     description:
-      'Sed tristique libero sed nisl sagittis, vel cursus ex porta. Maecenas id nisi vel mauris suscipit tempus ac ut tortor. Quisque eleifend luctus urna, vitae.',
+      'React.js - based one-page responsive portfolio website, containing two 3D models, smooth animations, and modern elements',
     tags: [
       {
-        name: 'react',
+        name: 'React.js',
         color: 'blue-text-gradient'
       },
       {
-        name: 'mongodb',
+        name: 'Tailwind css',
         color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'Three.js',
         color: 'pink-text-gradient'
       }
     ],
-    image: comingsoon,
-    source_code_link: 'https://github.com/pfellow',
+    image: portfolio,
+    source_code_link: 'https://github.com/pfellow/3d-portfolio',
     link: 'https://pfellow.me'
   },
   {
-    name: 'Project 2',
+    name: '2D Game: Planet 10',
     description:
-      'Nunc quis ex venenatis, vestibulum dui vitae, placerat velit. Suspendisse ut congue tortor. Mauris sit amet augue fermentum, consectetur velit et, euismod odio.',
+      '2D Game: Planet 10 is a 2D Unity based game (1 level) created with C# scripts and deployed to AWS S3 and CloudFront for public access',
     tags: [
       {
-        name: 'react',
+        name: 'Unity',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'C#',
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
+        name: 'AWS S3',
         color: 'pink-text-gradient'
+      },
+      {
+        name: 'AWS CloudFront',
+        color: 'blue-text-gradient'
       }
     ],
-    image: comingsoon,
-    source_code_link: 'https://github.com/pfellow',
-    link: 'https://pfellow.me'
+    image: game,
+    source_code_link: 'https://github.com/pfellow/2DGamePlanet10',
+    link: 'https://planet10.pfellow.me/'
   },
   {
-    name: 'Project 3',
+    name: 'Ogo.gl URL Shortener',
     description:
-      'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed varius lacus non ante luctus, sit amet posuere orci tristique sed.',
+      'Ogo.gl is a web service for shortening URL links launched it in 2018. In addition to several options for shortening URLs, this service provides various statistics on clicks. I am working on re-developing it by changing the development framework to Next.js and the database to MongoDB.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'jQuery',
         color: 'blue-text-gradient'
       },
       {
-        name: 'supabase',
+        name: 'PHP',
         color: 'green-text-gradient'
       },
       {
-        name: 'css',
+        name: 'MySQL',
         color: 'pink-text-gradient'
       }
     ],
-    image: comingsoon,
-    source_code_link: 'https://github.com/pfellow',
-    link: 'https://pfellow.me'
+    image: ogogl,
+    source_code_link: 'https://github.com/pfellow/url-shortener',
+    link: 'https://ogo.gl'
   }
 ];
 

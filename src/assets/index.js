@@ -19,6 +19,9 @@ import economics from './company/economics.webp';
 import vstu from './company/vstu.webp';
 
 import comingsoon from './comingsoon.png';
+import portfolio from './portfolio.png';
+import ogogl from './ogogl.png';
+import game from './game.png';
 import sergey from './sergey.jpg';
 
 export {
@@ -39,5 +42,8 @@ export {
   economics,
   vstu,
   comingsoon,
-  sergey
+  sergey,
+  portfolio,
+  game,
+  ogogl
 };
