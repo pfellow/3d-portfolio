@@ -153,7 +153,7 @@ const projects = [
   {
     name: 'Portfolio website',
     description:
-      'React.js - based one-page responsive portfolio website, containing two 3D models, smooth animations, and modern elements',
+      'React.js - based one-page responsive portfolio website, containing two 3D models, smooth animations, and modern elements. GitHub Actions workflow is used for deployment',
     tags: [
       {
         name: 'React.js',
@@ -170,6 +170,10 @@ const projects = [
       {
         name: 'AWS S3',
         color: 'blue-text-gradient'
+      },
+      {
+        name: 'Github Actions',
+        color: 'green-text-gradient'
       }
     ],
     image: portfolio,
