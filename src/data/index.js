@@ -166,14 +166,6 @@ const projects = [
       {
         name: 'Three.js',
         color: 'pink-text-gradient'
-      },
-      {
-        name: 'AWS S3',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'Github Actions',
-        color: 'green-text-gradient'
       }
     ],
     image: portfolio,
