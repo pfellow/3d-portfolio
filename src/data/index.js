@@ -160,12 +160,16 @@ const projects = [
         color: 'blue-text-gradient'
       },
       {
-        name: 'Tailwind css',
+        name: 'TailwindCSS',
         color: 'green-text-gradient'
       },
       {
         name: 'Three.js',
         color: 'pink-text-gradient'
+      },
+      {
+        name: 'AWS S3',
+        color: 'blue-text-gradient'
       }
     ],
     image: portfolio,
@@ -199,26 +203,38 @@ const projects = [
     link: 'https://planet10.pfellow.me/'
   },
   {
-    name: 'Ogo.gl URL Shortener',
+    name: 'oGo.gl URL Shortener',
     description:
-      'Ogo.gl is a web service for shortening URL links launched it in 2018. In addition to several options for shortening URLs, this service provides various statistics on clicks. I am working on re-developing it by changing the development framework to Next.js and the database to MongoDB.',
+      'Originally developed and launched in 2018 using jQuery, PHP and MySQL, ogo.gl web service for shortening URLs is currently under re-development by changing the development framework to Next.js and the database to MongoDB.',
     tags: [
       {
-        name: 'jQuery',
+        name: 'React.js',
         color: 'blue-text-gradient'
       },
       {
-        name: 'PHP',
+        name: 'Next.js',
         color: 'green-text-gradient'
       },
       {
-        name: 'MySQL',
+        name: 'MongoDB',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'Radix UI',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'AWS EC2',
         color: 'pink-text-gradient'
       }
     ],
     image: ogogl,
     source_code_link: 'https://github.com/pfellow/url-shortener',
-    link: 'https://ogo.gl'
+    link: 'https://s.pfellow.me'
   }
 ];
 
