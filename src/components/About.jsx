@@ -57,9 +57,8 @@ const About = () => {
             .
           </div>
           <div className='mb-4 leading-10'>
-            I'm based in Wellington{' '}
-            <img src={newzealand} className='inline h-8' alt='New Zealand' />{' '}
-            but open to relocation to other cities of Aotearoa.
+            I'm based in Wellington, New Zealand{' '}
+            <img src={newzealand} className='inline h-8' alt='New Zealand' /> .
           </div>
         </motion.div>
         <div className='lg:w-[40%] max-w-[500px] lg:mt-0 mt-10'>

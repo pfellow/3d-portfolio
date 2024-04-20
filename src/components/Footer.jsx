@@ -4,7 +4,7 @@ import {
   SiGithub,
   SiGmail,
   SiWhatsapp,
-  SiTelegram
+  SiTelegram,
 } from '@icons-pack/react-simple-icons';
 
 import { Link } from 'react-router-dom';
@@ -35,7 +35,10 @@ const Footer = () => {
           }}
         >
           <p className='text-white text-[18px] cursor-pointer flex'>
-            <span>Copyright&nbsp;©&nbsp;2023&nbsp;Sergey Shilovskiy</span>
+            <span>
+              Copyright&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Sergey
+              Shilovskiy
+            </span>
           </p>
         </Link>
         <ul className='list-none flex flex-row gap-3'>

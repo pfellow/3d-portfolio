@@ -10,6 +10,7 @@ import aws from './aws.webp';
 
 import github from './github.png';
 
+import immersve from './company/immersve.webp';
 import velvetech from './company/velvetech.webp';
 import avtomatika from './company/avtomatika.webp';
 import delovye from './company/delovye.webp';
@@ -34,6 +35,7 @@ export {
   db,
   aws,
   github,
+  immersve,
   velvetech,
   avtomatika,
   delovye,
@@ -45,5 +47,5 @@ export {
   sergey,
   portfolio,
   game,
-  ogogl
+  ogogl,
 };
