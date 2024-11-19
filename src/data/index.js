@@ -86,7 +86,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Project Coordinator',
+    title: 'IT Project Manager',
     company_name: 'Velvetech',
     icon: velvetech,
     iconBg: '#E6DEDD',
@@ -102,7 +102,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Technical Project Coordinator',
+    title: 'Technical Project Manager',
     company_name: 'Avtomatika-Servis',
     icon: avtomatika,
     iconBg: '#E6DEDD',
@@ -115,7 +115,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Business Analyst',
+    title: 'Logistics Manager / Logistics Specialist',
     company_name: 'Delovye Linii',
     icon: delovye,
     iconBg: '#383E56',
