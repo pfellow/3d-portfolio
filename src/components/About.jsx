@@ -1,4 +1,3 @@
-import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
@@ -17,7 +16,6 @@ import globe from '../assets/globe.png';
 import netflix from '../assets/netflix.png';
 import books from '../assets/books.png';
 import programming from '../assets/programming.png';
-import sergey from '../assets/sergey.jpg';
 import newzealand from '../assets/newzealand.png';
 
 const About = () => {
@@ -30,7 +28,7 @@ const About = () => {
       <div className='w-full lg:flex gap-4 justify-between items-center'>
         <motion.div
           variants={fadeIn('', '', 0.1, 1)}
-          className='mt-4 text-fourth sm:text-[20px]  sm:leading-[30px] text-[18px] leading-[22px] lg:w-[60%] max-w-[600px] '
+          className='mt-4 text-fourth sm:text-[20px]  sm:leading-[30px] text-[18px] leading-[22px]  max-w-[80%] '
         >
           <div className='mb-4 leading-10'>
             I love spending my spare time{' '}
@@ -50,31 +48,17 @@ const About = () => {
             <img src={friends} className='inline h-8' alt='friends' />.
           </div>
           <div className='mb-4 leading-10'>
-            I'm keen on{' '}
+            I&apos;m keen on{' '}
             <img src={travelling} className='inline h-8' alt='travelling' /> and{' '}
             <img src={exploring} className='inline h-8' alt='exploring' /> new
             places across <img src={globe} className='inline h-8' alt='globe' />
             .
           </div>
           <div className='mb-4 leading-10'>
-            I'm based in Wellington, New Zealand{' '}
+            I&apos;m based in Auckland, New Zealand{' '}
             <img src={newzealand} className='inline h-8' alt='New Zealand' /> .
           </div>
         </motion.div>
-        <div className='lg:w-[40%] max-w-[500px] lg:mt-0 mt-10'>
-          <motion.div variants={fadeIn('down', 'spring', 0.5, 0.75)}>
-            <Tilt
-              options={{ max: 45, scale: 1, speed: 200 }}
-              className='bg-tertiary p-1 rounded-md'
-            >
-              <img
-                src={sergey}
-                alt="Sergey's photo"
-                className='w-full h-full object-cover rounded-md'
-              />
-            </Tilt>
-          </motion.div>
-        </div>
       </div>
     </>
   );

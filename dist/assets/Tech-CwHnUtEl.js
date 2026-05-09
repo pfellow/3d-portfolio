@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BgbrCB7t.js";import{t}from"./hoc-gGUEeMMd.js";import{n}from"./canvas-iqzP_m7S.js";var r=e(),i=t(()=>(0,r.jsx)(`div`,{className:`flex justify-center`,children:(0,r.jsx)(n,{})}),`tech`);export{i as default};

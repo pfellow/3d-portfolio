@@ -34,6 +34,7 @@ const slugs = [
   allIcons.siCypress,
   allIcons.siFigma,
   allIcons.siMiro,
+  allIcons.siRedis,
 ];
 
 const icons = slugs.map((icon) => {

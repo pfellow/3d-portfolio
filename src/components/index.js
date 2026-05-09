@@ -24,5 +24,5 @@ export {
   MacbookCanvas,
   IconCloud,
   StarsCanvas,
-  ImacCanvas
+  ImacCanvas,
 };

@@ -1,7 +1,7 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 
@@ -38,6 +38,16 @@ const EducationCard = ({ experience }) => (
     </div>
   </VerticalTimelineElement>
 );
+
+EducationCard.propTypes = {
+  experience: PropTypes.shape({
+    date: PropTypes.string.isRequired,
+    iconBg: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    company_name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 const Education = () => {
   return (

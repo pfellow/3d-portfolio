@@ -1,7 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import AtomicSpinner from 'atomic-spinner';
-import { ImacCanvas } from './components/canvas';
 
 const Intro = lazy(() => import('./components/Intro'));
 const Tech = lazy(() => import('./components/Tech'));

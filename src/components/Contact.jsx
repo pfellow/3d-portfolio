@@ -15,7 +15,7 @@ const Contact = () => {
     organization: '',
     email: '',
     message: '',
-    phone: ''
+    phone: '',
   });
 
   const formChangeHandler = (event) => {
@@ -27,7 +27,7 @@ const Contact = () => {
     event.preventDefault();
     setLoading(true);
 
-    emailjs
+    (emailjs
       .send(
         'service_td4vwms',
         'template_cdfdswc',
@@ -38,7 +38,7 @@ const Contact = () => {
           to_name: 'Sergey Shilovskiy',
           reply_to: form.email,
           to_email: 'pfellow@proton.me',
-          message: form.message
+          message: form.message,
         },
         'X4QinzKCOooCWBQEV'
       )
@@ -50,14 +50,14 @@ const Contact = () => {
           organization: '',
           email: '',
           message: '',
-          phone: ''
+          phone: '',
         });
       }),
       (error) => {
         setLoading(false);
         alert('Something went wrong... Please try again later.');
         console.log(error);
-      };
+      });
   };
 
   return (

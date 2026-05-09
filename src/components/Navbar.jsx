@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 import { styles } from '../styles';
 import { navLinks } from '../data';
 import { logo, menu, close } from '../assets';
-import cv from '../assets/Sergey_Shilovskiy_CV.pdf';
 
 const Navbar = () => {
   const [active, setActive] = React.useState('');
@@ -44,11 +41,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <a href={cv} download>
-          <button className='text-secondary hover:text-white text-[18px] font-medium hidden lg:block'>
-            <FontAwesomeIcon icon={faFileArrowDown} /> CV
-          </button>
-        </a>
         <div className='lg:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -77,11 +69,6 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <a href={cv} download>
-              <button className='text-secondary hover:text-primary text-[18px] font-medium'>
-                <FontAwesomeIcon icon={faFileArrowDown} /> CV
-              </button>
-            </a>
           </div>
         </div>
       </div>

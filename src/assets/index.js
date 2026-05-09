@@ -7,6 +7,7 @@ import node from './node.webp';
 import api from './api.webp';
 import db from './db.webp';
 import aws from './aws.webp';
+import ai from './ai.webp';
 
 import github from './github.png';
 
@@ -19,11 +20,10 @@ import peter from './company/peter.webp';
 import economics from './company/economics.webp';
 import vstu from './company/vstu.webp';
 
-import comingsoon from './comingsoon.png';
-import portfolio from './portfolio.png';
-import ogogl from './ogogl.png';
+import fintrack from './fintrack.webp';
+import vagabond from './vagabond.webp';
+import vitalTrack from './vitalTrack.webp';
 import game from './game.png';
-import sergey from './sergey.jpg';
 
 export {
   logo,
@@ -43,9 +43,9 @@ export {
   peter,
   economics,
   vstu,
-  comingsoon,
-  sergey,
-  portfolio,
+  fintrack,
+  vagabond,
+  vitalTrack,
   game,
-  ogogl,
+  ai,
 };
