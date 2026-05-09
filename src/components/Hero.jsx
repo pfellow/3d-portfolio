@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ImacCanvas } from './canvas';
@@ -21,7 +20,7 @@ const Hero = () => {
               <h1
                 className={`${styles.heroHeadText} text-white md:max-w-[80%]`}
               >
-                Kia ora, I'm&nbsp;
+                Kia ora, I&apos;m&nbsp;
                 <span className='text-[#1282a2]'>Sergey Shilovskiy</span>
               </h1>
               <p
@@ -43,7 +42,7 @@ const Hero = () => {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  repeatType: 'loop'
+                  repeatType: 'loop',
                 }}
                 className='w-3 h-3 rounded-full bg-fourth mb-1'
               />

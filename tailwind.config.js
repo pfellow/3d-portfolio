@@ -11,18 +11,18 @@ module.exports = {
         fourth: '#bdbacf',
         'black-100': '#100d25',
         'black-200': '#090325',
-        'white-100': '#fefcfb'
+        'white-100': '#fefcfb',
       },
       boxShadow: {
-        card: '0px 35px 120px -15px #211e35'
+        card: '0px 35px 120px -15px #211e35',
       },
       screens: {
-        xs: '450px'
+        xs: '450px',
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/herobg-new.jpg')"
-      }
-    }
+        'hero-pattern': "url('/src/assets/herobg-new.jpg')",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };

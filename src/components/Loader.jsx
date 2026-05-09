@@ -11,7 +11,7 @@ const Loader = () => {
             fontSise: 14,
             color: '#f1f1f1',
             fontWeight: 800,
-            marginTop: 30
+            marginTop: 30,
           }}
         >
           {progress.toFixed(2)}%

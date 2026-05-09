@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import {
   SiLinkedin,
   SiGithub,
@@ -11,14 +11,19 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 
-const Icon = (props) => {
+const Icon = ({ url, SiIcon }) => {
   return (
     <li>
-      <Link to={props.url} target='_blank'>
-        <props.SiIcon size={32} className='hover:text-secondary' />
+      <Link to={url} target='_blank'>
+        <SiIcon size={32} className='hover:text-secondary' />
       </Link>
     </li>
   );
+};
+
+Icon.propTypes = {
+  url: PropTypes.string.isRequired,
+  SiIcon: PropTypes.elementType.isRequired,
 };
 
 const Footer = () => {

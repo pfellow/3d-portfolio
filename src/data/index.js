@@ -1,6 +1,5 @@
 import {
   react,
-  node,
   api,
   db,
   aws,
@@ -12,10 +11,11 @@ import {
   peter,
   economics,
   vstu,
-  comingsoon,
-  portfolio,
+  vagabond,
   game,
-  ogogl,
+  ai,
+  fintrack,
+  vitalTrack,
 } from '../assets';
 
 const navLinks = [
@@ -45,18 +45,14 @@ const navLinks = [
   },
 ];
 
-const heroText = `I'm a Software Engineer skilled in JavaScript (React.js, Vue.js Node.js, Next.js), cloud technologies (AWS), and SQL/NoSQL databases with hands-on experience in creating responsive web applications.`;
+const heroText = `I'm a Fullstack Software Engineer skilled in building robust and responsive web applications with cloud technologies (AWS), SQL/NoSQL databases, and AI.`;
 
 const overview = `Programming is more than a skill – it's a hobby and a source of continuous self-development for me. I enjoy staying up to date with the latest advancements in web development and finding solutions to complex challenges.`;
 
 const services = [
   {
-    title: 'Frontend Developer (React.js, Vue.js)',
+    title: 'Web App Fullstack Developer',
     icon: react,
-  },
-  {
-    title: 'Backend Developer (Node.js)',
-    icon: node,
   },
   {
     title: 'API Developer (REST, GraphQL)',
@@ -69,6 +65,10 @@ const services = [
   {
     title: 'AWS Cloud Developer',
     icon: aws,
+  },
+  {
+    title: 'Development with AI',
+    icon: ai,
   },
 ];
 const experiences = [
@@ -165,30 +165,70 @@ const portfolioIntro = `This section provides insights into some of my web proje
 
 const projects = [
   {
-    name: 'Portfolio website',
+    name: 'Fintrack | Your Personal Finance Hub',
     description:
-      'React.js - based one-page responsive portfolio website, containing two 3D models, smooth animations, and modern elements. GitHub Actions workflow is used for automatic deployment to production',
+      'A web service for personal finance management. The app aggregates bank accounts, investment portfolios, and monthly spending metrics into a single view. The platform enables users to monitor real-time balances, track specific investment funds, and manage financial planning through an organized, high-level interface. ',
     tags: [
       {
-        name: 'React.js',
+        name: 'Vue',
         color: 'blue-text-gradient',
       },
       {
-        name: 'TailwindCSS',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Three.js',
+        name: 'Firebase',
         color: 'pink-text-gradient',
       },
       {
-        name: 'Github Actions',
-        color: 'blue-text-gradient',
+        name: 'Google AI Studio',
+        color: 'green-text-gradient',
       },
     ],
-    image: portfolio,
-    source_code_link: 'https://github.com/pfellow/3d-portfolio',
-    link: 'https://pfellow.me',
+    image: fintrack,
+    source_code_link: '#',
+    link: 'https://fin.beeon.top',
+  },
+  {
+    name: 'Vagabond | Trip planner',
+    description:
+      'Streamlined travel management dashboard designed to centralize complex itineraries, including multi-leg flights, accommodations, and ground transportation. It features a prominent "Auto-plan with AI" tool that allows users to automatically generate or organize travel steps within their schedule.',
+    tags: [
+      {
+        name: 'Vue',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Firebase',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Google AI Studio',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: vagabond,
+    source_code_link: '#',
+    link: 'https://trip.beeon.top',
+  },
+  {
+    name: 'VitalTrack | Personal health manager',
+    description:
+      'Comprehensive health management application that allows users to track medications, medical records, and upcoming appointments through a responsive, emerald-themed interface. The platform leverages integrated AI features to assist adding medical records from files.',
+    tags: [
+      {
+        name: 'Vue',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Firebase',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Google AI Studio',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: vitalTrack,
+    source_code_link: '#',
+    link: 'https://health.beeon.top',
   },
   {
     name: '2D Game: Planet 10',
@@ -216,51 +256,6 @@ const projects = [
     source_code_link: 'https://github.com/pfellow/2DGamePlanet10',
     link: 'https://planet10.pfellow.me/',
   },
-  {
-    name: 'oGo.gl URL Shortener',
-    description:
-      'Originally developed and launched in 2018 using jQuery, PHP and MySQL, ogo.gl web service for shortening URLs is currently under re-development by changing the development framework to Next.js and the database to MongoDB.',
-    tags: [
-      {
-        name: 'React.js',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Next.js',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'MongoDB',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'TailwindCSS',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Radix UI',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'AWS EC2',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: ogogl,
-    source_code_link: 'https://github.com/pfellow/url-shortener',
-    link: 'https://s.pfellow.me',
-  },
-];
-
-const photos = [
-  {
-    name: 'Photo 1',
-    image: comingsoon,
-  },
-  {
-    name: 'Photo 1',
-    image: comingsoon,
-  },
 ];
 
 export {
@@ -272,5 +267,4 @@ export {
   education,
   projects,
   portfolioIntro,
-  photos,
 };
